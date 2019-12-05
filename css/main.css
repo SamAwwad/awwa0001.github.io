@@ -1,0 +1,249 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+    line-height: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+
+ p {
+    font-size: 0.75rem;
+    margin: 0 0 1rem 0;
+ }
+ 
+ h1 {
+    font-size: 1.688rem;
+    margin: 0 0 1.5rem 0;
+ }
+ 
+ h2 {
+    font-size: 1.125rem;
+    margin: 0 0 1rem 0;
+ }
+
+
+.main-container {
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    text-align: center;
+    margin: 0 -1rem;
+}
+
+.site-title {
+    
+    background-image: url("../img/Untitled-1.jpg");
+    background-size: cover;
+    background-position: center center;
+    line-height: 300px;
+    height: 300px;
+}
+
+
+/*---------- Navigation ----------*/
+
+nav,
+.more-info {
+    background-color: blue;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+}
+
+nav ul li{
+    min-width: 120px;
+}
+nav a,
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+    color: black;
+    border: thin solid black;
+    box-sizing: border-box;
+    padding: 20px;
+    display: block;
+}
+nav a:hover,
+nav a:focus{
+    background: blue;
+}
+nav a.active{
+    background: navy;
+    color: cyan;
+}
+
+.container {
+    max-width: 35rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.container h2 {
+    margin: 1rem 0 1rem 0;
+    font-weight: bolder;
+}
+
+.container p {
+    margin: 1rem 0 1rem 0;
+}
+
+.more-info {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    margin: 0 -1rem;
+}
+
+.content-img {
+    float: none;
+    width: 100%;
+}
+
+/**** Footer *******/
+
+footer {
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    margin: 0 -1rem;
+}
+/*  ************* Tablet ***************   */
+
+ @media screen and (min-width: 35rem) and (max-width: 80rem) {
+ 
+    body {
+        font-size: 1rem;
+    }
+
+    .container{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+    }
+    nav ul li{
+        flex: 1;
+    }
+
+    .content-img {
+        float: left;
+        margin-right: 1rem;
+        max-width: 50%;
+    }
+
+}
+
+/*  ************ desktop *************   */
+
+ @media screen and (min-width: 80rem) {
+ 
+    body {
+        font-size: 1rem;
+    }
+
+    .container{
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        flex-direction: row;
+    }
+    nav ul li{
+        flex: 1;
+    }
+
+    .content-img {
+        float: left;
+        margin-right: 1.25rem;
+        max-width: 35%;
+    }
+
+    .secondary-articles,
+    .secondary-contents {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .secondary-article,
+    .secondary-content {
+        flex: 1;
+        padding: 10px;
+        
+    }
+}
